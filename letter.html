@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:">
+  <title>너에게 쓰는 편지</title>
+  <link rel="icon" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body data-page="letter">
+  <main class="page">
+    <h1 id="greeting"></h1>
+    <button id="envelope" class="envelope" type="button" aria-label="편지 열기">
+      <span class="flap"></span><span class="sheet"></span><span class="front"></span><span class="wax">祝</span>
+    </button>
+    <p id="hint" class="small">봉투를 눌러 편지를 열어 봐</p>
+    <article id="card" class="paper letter" hidden>
+      <h2 id="to"></h2>
+      <p id="message"></p>
+      <p id="closing" class="closing"></p>
+    </article>
+    <div id="actions" class="actions" hidden>
+      <button id="save" class="button" type="button">이미지로 저장</button>
+      <button id="leave" class="button ghost" type="button">닫고 나가기</button>
+    </div>
+    <a class="link" href="common.html">공통 메시지 다시 보기</a>
+  </main>
+</body>
+</html>

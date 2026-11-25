@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:">
+  <title>본인 확인</title>
+  <link rel="icon" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/verify.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body data-page="verify">
+  <main class="page">
+    <h1>편지의 주인을 확인할게</h1>
+    <p class="small">입력한 정보는 어디에도 전송하거나 저장하지 않고, 이 기기에서 편지를 여는 데만 써요.</p>
+    <form id="verify-form" class="paper" novalidate>
+      <label>이름<input name="name" autocomplete="off" required></label>
+      <label>전화번호<input name="phone" type="tel" inputmode="tel" placeholder="010-1234-5678" autocomplete="off" required></label>
+      <label>생일 (월일 4자리)<input name="birthday" inputmode="numeric" placeholder="예: 0301" autocomplete="off" required></label>
+      <label>좋아하는 숫자<input name="favoriteNumber" inputmode="numeric" autocomplete="off" required></label>
+      <label>학생회 부서<select name="department" required><option value="">선택해 주세요</option></select></label>
+      <p id="form-error" class="error" role="alert"></p>
+      <button class="button" type="submit">확인하기</button>
+    </form>
+    <a class="link" href="index.html">처음으로</a>
+  </main>
+</body>
+</html>

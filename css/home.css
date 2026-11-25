@@ -1,0 +1,4 @@
+.home{min-height:100vh;justify-content:center}
+.school{margin:0;color:var(--gold);letter-spacing:.15em}
+.lead{margin:0}
+.seal{width:6rem;height:6rem;border-radius:50%;display:grid;place-items:center;background:var(--wax);color:#f8e7c9;font-size:2.4rem;box-shadow:inset 0 0 0 6px rgba(255,255,255,.12),0 8px 20px rgba(140,47,57,.3)}
